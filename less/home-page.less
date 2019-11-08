@@ -134,21 +134,28 @@
     }
 
     p {
-      margin-bottom: 26px;
+      margin-bottom: 15px;
     }
 
     form {
-      .flex(row,space-between,flex-end);
+      .flex(row,space-between,baseline);
+      @media @phone {
+        .flex(column,space-between,flex-start);
+      }
 
       input {
         border: 1px solid @main-border-color;
-        height: 30px;
+        height: 36px;
+        @media @phone {
+          width: 100%;
+        }
       }
       button {
         .cta-btn(@btn-bg-color,white);
         padding: 8px 24px;
         border-radius: 5px;
         border:none;
+        font-size: 1.8rem;
       }
     }
   }

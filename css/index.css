@@ -346,17 +346,30 @@ footer {
   margin-bottom: 10px;
 }
 .home .subscribe-text p {
-  margin-bottom: 26px;
+  margin-bottom: 15px;
 }
 .home .subscribe-text form {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  align-items: flex-end;
+  align-items: baseline;
+}
+@media (max-width: 500px) {
+  .home .subscribe-text form {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+  }
 }
 .home .subscribe-text form input {
   border: 1px solid #dee2e6;
-  height: 30px;
+  height: 36px;
+}
+@media (max-width: 500px) {
+  .home .subscribe-text form input {
+    width: 100%;
+  }
 }
 .home .subscribe-text form button {
   background-color: #22283A;
@@ -364,4 +377,5 @@ footer {
   padding: 8px 24px;
   border-radius: 5px;
   border: none;
+  font-size: 1.8rem;
 }
