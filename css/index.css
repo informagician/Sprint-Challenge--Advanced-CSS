@@ -307,6 +307,7 @@ footer {
 }
 .home .walk .walk-text .btn:hover {
   background-color: orange ;
+  color: black;
 }
 @media (max-width: 500px) {
   .home .walk .walk-text .btn {
