@@ -34,13 +34,29 @@ Edit this document to include your answers after each question. Make sure to lea
 
 1. What is the difference between an adaptive website and a fully responsive website?
 
+Responsive websites leverages features from fluid, adaptive and fixed to provide the most optimal viewing experience for the user regardless of their screen size; in contrast, adaptive websites offer a separate layout for each screen size. The site decides which layout to offer based on visitor's screen size.
+draw back of adaptive design is that it only works well on viewports that layout was defined for it.
+
 2. Describe what it means to be mobile first vs desktop first.
+
+- Mobile first strategy is when we design the site for mobile device/users first and then expand the layout to scale for larger screens (tablet, desktop, etc.)
+In contrast in desktop first approach we implement the layout for large screens first and then modify the layout to scale down for smaller screens (tablets and mobiles)
+- When scaling up from mobile to desktop we use min-width in media queries and when scaling down we use max-width.
 
 3. What does `font-size: 62.5%` in the `html` tag do for us when using `rem` units?
 
+default html font-size is 16px. working with 16px is not easy due to multiplications.
+62.5% brings it down to 10px and since rems are multiplications of 10px, it makes it more convenient to style elements.
+
 4. How would you describe preprocessing to someone new to CSS?
 
+Using a preprocessor and its syntax we can generate valid css code with less effort. Leveraging capabilities like nesting and variables, maintaining code in preprocessor syntax is easier due to abstract structure.
+
 5. What is your favorite concept in preprocessing? What is the concept that gives you the most trouble?
+
+both my favorite concept and the one I most struggle with is Parametric Mixins. This love and hate relationship is due to:
+- parametric mixins with few arguments help keep the code dry but as the number of arguments grow referring to parameters become time consuming.
+- there are situation that I want to skip an argument and I don't want the parameter return to default or inheret from parent.
 
 You are expected to be able to answer all these questions. Your responses contribute to your Sprint Challenge grade. Skipping this section *will* prevent you from passing this challenge.
 

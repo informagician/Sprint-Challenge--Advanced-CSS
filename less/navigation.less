@@ -1,1 +1,41 @@
 // Navigation code here
+.navbar {
+    height: 100px;
+    background-color: #f6f6f6;
+    border-bottom: 1px solid #f1f1f1;
+    &:hover {
+        background-color: @border-real;
+    }
+
+    //stretch goal
+    position: fixed;
+    width: 100%;
+
+    .top-nav {
+        width: 800px;
+        margin:0 auto;
+        height: 100%;
+        .flex(column, space-evenly);
+
+        @media @phone {
+            width: 100%;
+        }
+
+        h1 {
+            font-size: 4rem;
+        }
+
+        nav {
+            width: 50%;
+            .flex(row, space-around);
+
+            @media @phone {
+                width: 80%;
+            }
+            a {
+                .link(1.6rem,@shuttle-gray);
+                font-weight: bold;
+            }
+        }
+    }
+}
