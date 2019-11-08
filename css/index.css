@@ -164,6 +164,8 @@ p {
   height: 100px;
   background-color: #f6f6f6;
   border-bottom: 1px solid #f1f1f1;
+  position: fixed;
+  width: 100%;
 }
 .navbar .top-nav {
   width: 800px;
@@ -210,6 +212,9 @@ footer {
   display: flex;
   justify-content: center;
   align-items: center;
+}
+.home {
+  padding-top: 100px;
 }
 .home .intro h2 {
   padding: 15px;
