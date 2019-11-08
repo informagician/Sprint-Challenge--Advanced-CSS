@@ -10,6 +10,10 @@
         height: 100%;
         .flex(column, space-evenly);
 
+        @media @phone {
+            width: 100%;
+        }
+
         h1 {
             font-size: 4rem;
         }
@@ -18,8 +22,12 @@
             width: 50%;
             .flex(row, space-around);
 
+            @media @phone {
+                width: 80%;
+            }
             a {
-                .link(1.8rem,@shuttle-gray);
+                .link(1.6rem,@shuttle-gray);
+                font-weight: bold;
             }
         }
     }
